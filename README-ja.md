@@ -3,8 +3,8 @@
 大規模言語モデル（LLM）を扱うためのツールとレシピ集です。このリポジトリは、以下のようなタスクのための様々なユーティリティと例を提供します。
 
 *   テキスト生成
-*   教師ありファインチューニング（SFT）（※追加時期は未定）
-*   人間からのフィードバックを用いた強化学習（RLHF）（※追加時期は未定）
+*   Supervised Fine-Tuning（SFT）（※追加時期は未定）
+*   Reinforcement Learning from Human Feedback（RLHF）（※追加時期は未定）
 *   Direct Preference Optimization（DPO）（※追加時期は未定）
 
 ## はじめに
