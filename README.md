@@ -84,7 +84,7 @@ This notebook extends the SFT techniques by integrating Retrieval Augmented Gene
 **Key Steps and Learning Points**:
 1.  **RAG System Construction**: Build a vector database (FAISS) using your chosen specialized document as the knowledge source. Covers document loading, chunking, embedding, and index creation.
 2.  **SFT Data Preparation**: Augment an instruction-response dataset (e.g., `ichikara-instruction`) by adding relevant context retrieved by the RAG system for each question. This trains the model to "read and answer based on context."
-3.  **SFT with QLoRA**: Fine-tune the base model using the RAG-augmented dataset with memory-efficient QLoRA.
+3.  **SFT with QLoRA**: Fine-tune the base model using the RAG-augmented dataset with memory-efficient QLoRA. This notebook utilizes a custom PyTorch training loop (or the Hugging Face Trainer) to handle the specific data format tailored for RAG.
 4.  **Inference Pipeline Construction**: Integrate the fine-tuned LoRA adapter and the RAG system using LangChain to build a question-answering pipeline.
 5.  **Interactive Demo with Gradio UI**: Qualitatively evaluate the performance of the created RAG chatbot through an interactive Gradio interface.
 6.  **Sharing to Hugging Face Hub**: Steps to upload the trained LoRA adapter to the Hub.
