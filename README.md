@@ -1,20 +1,21 @@
-# LLM Toolkit 🛠️
+# LLM Toolkit
 
 This repository serves as a toolkit consolidating sample code and learning resources that I have created and practiced for learning Large Language Models (LLMs). It covers a range of techniques for deeply leveraging LLMs, from the basics of text generation to advanced applications like Supervised Fine-Tuning (SFT) and Retrieval Augmented Generation (RAG), all presented in Google Colab notebook format.
 
-My goal is not only to enhance my own knowledge and skills in the LLM field but also to provide a helpful starting point for others learning in this area to begin their development journey. I've made this public with the hope that it can become step-by-step learning content, even for beginners.
+My goal is not only to enhance my own knowledge and skills in the LLM field but also to provide a helpful starting point for others learning in this area to begin their development journey.
 
-## 🚀 Featured Notebooks
+## Featured Notebooks
 
 | Notebook                                                                                                                               | Description                                                                                                                                                           | Key Technologies/Libraries                                                                                                         | Features & What You'll Learn                                                                                             | Open in Colab                                                                                                                                    |
 | :-------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
 | **[Universal LLM GUI Notebook](https://github.com/yf591/llm-toolkit/blob/main/Universal_LLM_GUI_Notebook.ipynb)**                      | A versatile Gradio UI-equipped notebook allowing you to select various pre-trained LLMs and experiment with text generation by adjusting parameters.                  | `transformers`, `torch`, `gradio`                                                                                              | Basic LLM operations, model selection, parameter tuning, easy text generation experience                                               | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yf591/llm-toolkit/blob/main/Universal_LLM_GUI_Notebook.ipynb) |
 | **[SFT LLM FineTuning GUI Notebook](https://github.com/yf591/llm-toolkit/blob/main/SFT_LLM_FineTuning_GUI_Notebook.ipynb)**               | Explains how to efficiently fine-tune LLMs using QLoRA with the `SFTTrainer` from the `trl` library. Allows testing the fine-tuned model via a Gradio UI.        | `transformers`, `peft` (QLoRA), `trl` (SFTTrainer), `bitsandbytes`, `datasets`, `gradio`, `torch`, `accelerate`                  | SFT (QLoRA), `SFTTrainer` usage, dataset formatting, efficient fine-tuning, Gradio UI for evaluation                         | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yf591/llm-toolkit/blob/main/SFT_LLM_FineTuning_GUI_Notebook.ipynb) |
 | **[LLM SFT & RAG with GradioUI](https://github.com/yf591/llm-toolkit/blob/main/LLM_SFT_%26_RAG_GradioUI.ipynb)**                        | Builds a chatbot that responds based on specific domain knowledge by combining QLoRA-based SFT with RAG. Test it interactively with a Gradio UI.                  | `transformers`, `peft` (QLoRA), `langchain`, `faiss-cpu`, `bitsandbytes`, `datasets`, `gradio`, `torch`, `accelerate`                | SFT (QLoRA) + RAG, domain knowledge integration, vector DB (FAISS), LangChain pipelines, interactive UI, model sharing          | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yf591/llm-toolkit/blob/main/LLM_SFT_%26_RAG_GradioUI.ipynb) |
+| **[Gemma 4 & Llama 4 Notebook](https://github.com/yf591/llm-toolkit/blob/main/gemma-4_llama-4_notebook.ipynb)**                       | A notebook for easily testing the latest LLMs such as Google Gemma 4 and Meta Llama 4 on Google Colab. Provides two modes (single Q&A and chat with history) via a Gradio UI.    | `transformers`, `torch`, `gradio`                                                                                              | Latest model support (Gemma 4 / Llama 4), single Q&A & chat mode, parameter tuning, Gradio UI                                | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yf591/llm-toolkit/blob/main/gemma-4_llama-4_notebook.ipynb) |
 | *RLHF_Notebook.ipynb (Placeholder)*                                                                                                     | *(In Preparation)* A notebook for practicing Reinforcement Learning from Human Feedback (RLHF).                                                              | `trl` (planned), `transformers`, `datasets`                                                                                       | *(Planned)* Reward modeling, PPO algorithm, LLM behavior alignment                                                                | *(Coming Soon)*                                                                                                                            |
 | *DPO_Notebook.ipynb (Placeholder)*                                                                                                      | *(In Preparation)* A notebook for learning Direct Preference Optimization (DPO), a simpler alignment method.                                                       | `trl` (planned), `transformers`, `datasets`                                                                                       | *(Planned)* Preference pair learning, RLHF alternative                                                                             | *(Coming Soon)*                                                                                                                            |
 
-## 📚 Key Technologies You Can Learn & Experiment With
+## Key Technologies You Can Learn & Experiment With
 
 Through this toolkit, you can deepen your understanding and acquire practical skills in the following LLM-related technologies
 
@@ -36,7 +37,7 @@ Through this toolkit, you can deepen your understanding and acquire practical sk
 *   **Interactive UI Development**: Creating simple web UIs for easy model testing using Gradio.
 *   **Hugging Face Hub Integration**: Sharing your trained models (adapters) on the Hub.
 
-## 🛠️ Basic Notebook Usage
+## Basic Notebook Usage
 
 1.  **Open Notebook in Colab**
     *   Click the "Open in Colab" badge in the table above or directly open the notebook file link.
@@ -52,9 +53,9 @@ Through this toolkit, you can deepen your understanding and acquire practical sk
     *   Run each cell from top to bottom, reading the explanations and instructions provided in the Markdown cells.
     *   When you run cells that launch a Gradio UI, an interactive web interface will appear in the Colab output area, allowing you to test the model.
 
-## 📖 Notebook Highlights
+## Notebook Highlights
 
-### 1. Universal LLM GUI Notebook 💬
+### 1. Universal LLM GUI Notebook
 A versatile notebook for easily loading and experimenting with various pre-trained LLMs (e.g., `elyza/ELYZA-japanese-Llama-2-7b-instruct`, `google/gemma-7b-it`). It features a Gradio-based UI for prompt input and parameter adjustment (temperature, max new tokens, etc.).
 
 **Recommended for users who want to**
@@ -64,7 +65,7 @@ A versatile notebook for easily loading and experimenting with various pre-train
 
 *(Code examples within this notebook are designed to be generic to support various models.)*
 
-### 2. SFT LLM FineTuning GUI Notebook 🎯
+### 2. SFT LLM FineTuning GUI Notebook
 This notebook provides a step-by-step guide on efficiently performing Supervised Fine-Tuning (SFT) on Large Language Models (e.g., `tokyotech-llm/Llama-3.1-Swallow-8B-Instruct-v0.1`) using QLoRA (Quantized Low-Rank Adaptation) and the `SFTTrainer` from Hugging Face's `trl` library. It covers the entire process from custom dataset preparation, training configuration, and execution, to verifying the fine-tuned model, concluding with an easy-to-use Gradio UI for inference.
 *Note: While `tokyotech-llm/Llama-3.1-Swallow-8B-Instruct-v0.1` does not require Hugging Face login for access, some other models might.*
 
@@ -83,7 +84,7 @@ This notebook provides a step-by-step guide on efficiently performing Supervised
 *   Try customizing Japanese LLMs.
 *   Experiment with SFT on limited computational resources.
 
-### 3. LLM SFT & RAG with GradioUI 🧠📚
+### 3. LLM SFT & RAG with GradioUI
 This notebook extends the SFT techniques by integrating Retrieval Augmented Generation (RAG) to dynamically incorporate external specialized knowledge into an LLM. It demonstrates building a chatbot using a Japanese LLM (e.g., `tokyotech-llm/Llama-3.1-Swallow-8B-Instruct-v0.1`) that leverages a specific document (e.g., "Reinforcement Learning: An Introduction" PDF) as its knowledge source.
 *This also serves as an experiment to observe the performance when implementing RAG with English documents for a Japanese LLM.*
 
@@ -101,7 +102,19 @@ This notebook extends the SFT techniques by integrating Retrieval Augmented Gene
 *   Understand the implementation of RAG using LangChain and vector databases.
 *   Get a practical recipe for developing LLM applications.
 
-## 💡 Future Roadmap
+### 4. Gemma 4 & Llama 4 Notebook
+A notebook for easily testing the latest-generation LLMs such as Google Gemma 4 and Meta Llama 4 on Google Colab. It updates the `transformers` library to support new architectures and provides an intuitive Gradio-based web UI.
+
+**Two Modes**
+*   **Single Q&A**: Set a system prompt role and generate a one-shot response.
+*   **Chat mode (Recommended)**: Enables continuous dialogue with conversation history preserved. Using instruction-tuned models (with `-it` or `-instruct` suffix) is recommended.
+
+**Recommended for users who want to**
+*   Quickly try out the latest LLMs like Gemma 4 and Llama 4.
+*   Compare single Q&A and chat interaction styles.
+*   Experiment with text generation by adjusting parameters through the Gradio UI.
+
+## Future Roadmap
 
 *   **RLHF (Reinforcement Learning from Human Feedback) Notebook**: For training LLMs to generate more natural responses aligned with user intent.
 *   **DPO (Direct Preference Optimization) Notebook**: A simpler alternative to RLHF for fine-tuning LLMs directly from preference data.
@@ -110,16 +123,16 @@ This notebook extends the SFT techniques by integrating Retrieval Augmented Gene
 *   Enrichment of explanatory documentation for each notebook (theoretical background, implementation details).
 *   Introduction of specific metrics and methods for model evaluation.
 
-## 🙏 Contributions
+## Contributions
 
 Contributions in any form are highly welcome, whether it's bug reports, feature suggestions, new notebook additions, or documentation improvements! Please feel free to create an Issue or send a Pull Request on GitHub. Let's make this toolkit even better together.
 
-## 📜 Disclaimer
+## Disclaimer
 
 The software and sample code provided in this repository are offered "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
 The content generated by Large Language Models (LLMs) may contain inaccuracies, biases, or inappropriate expressions. Users are obligated to critically evaluate the output of LLMs and use it at their own risk. For critical decision-making, users should exercise caution and seek expert advice.
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](https://github.com/yf591/llm-toolkit/blob/main/LICENSE).
 However, pre-trained LLM models, datasets, and libraries used within each notebook may have their own respective licenses. Please ensure you review and comply with all applicable license terms.
